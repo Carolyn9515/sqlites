@@ -333,7 +333,12 @@ public class MainActivity extends AppCompatActivity {
         }else if(id == R.id.action_salir){
             DialogConfirmacion();
             return true;
+        }else if (id == R.id.acercade) {
+            Intent Acercade = new Intent(MainActivity.this, AcercaDe.class);
+            startActivity(Acercade);
+            return true;
         }
+
 
         return super.onOptionsItemSelected(item);
     }
